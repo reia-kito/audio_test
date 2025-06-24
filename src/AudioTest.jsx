@@ -40,14 +40,12 @@ function AudioTest() {
     return (
         <Container>
             {!isRecording && (
-            <MicIcon onClick={startRecording} disabled={isRecording}>
-                録音開始
-            </MicIcon>
+            <MicIcon onClick={startRecording} disabled={isRecording} />
+
             )}
             {isRecording && (
-            <StopCircleIcon onClick={stopRecording} disabled={!isRecording}>
-                録音停止
-            </StopCircleIcon>
+            <StopCircleIcon onClick={stopRecording} disabled={!isRecording} />
+
             )}
             {audioUrl && (
                 <Container>
