@@ -41,11 +41,9 @@ function AudioTest() {
         <Container>
             {!isRecording && (
             <MicIcon onClick={startRecording} disabled={isRecording} />
-
             )}
             {isRecording && (
             <StopCircleIcon onClick={stopRecording} disabled={!isRecording} />
-
             )}
             {audioUrl && (
                 <Container>
